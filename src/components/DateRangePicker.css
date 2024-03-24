@@ -1,0 +1,16 @@
+/* DateRangePicker.css */
+.date-range-picker-container input[type="date"] {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* Highlight weekdays */
+  .date-range-picker-container input[type="date"]:not(.weekend) {
+    background-color: lightblue;
+  }
+  
+  /* Disable weekends */
+  .date-range-picker-container input[type="date"].weekend {
+    pointer-events: none; /* Disable click events on weekends */
+    color: #999; /* Gray out weekend dates */
+  }

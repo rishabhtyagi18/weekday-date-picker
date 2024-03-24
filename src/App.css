@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* DateRangePicker.css */
+.date-range-picker-container input[type="date"] {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Highlight weekdays */
+.date-range-picker-container input[type="date"]:not(.weekend) {
+  background-color: #e0e0e0;
+}
+
+/* Disable weekends */
+.date-range-picker-container input[type="date"].weekend {
+  pointer-events: none; /* Disable click events on weekends */
+  background-color: #f7f7f7; /* Lighter gray background for weekends */
+  color: #999;
+}
